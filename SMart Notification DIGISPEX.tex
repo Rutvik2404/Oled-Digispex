@@ -1,0 +1,185 @@
+\documentclass[12pt,a4paper,final,oneside]{report}
+\usepackage{geometry}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage[pdftex]{hyperref}
+\usepackage{epstopdf}
+\usepackage{setspace}
+\usepackage{natbib}
+\usepackage[bottom]{footmisc}
+
+\title{Sections and Chapters}
+
+
+\begin{document}
+	
+	
+	
+	
+	
+	\begin{center}
+		A Seminar/Project Report On
+		\linebreak \LARGE{Smart Notification Display 
+		} 
+		\linebreak \LARGE{using OLED DigiSpex}
+	\end{center}
+	\vspace{2cm}
+	\begin{figure}[t]
+		\centering
+		\includegraphics[width=0.2\linewidth]{C:/Users/User/Downloads/clgpic}
+	\end{figure}
+	\vspace{1cm}
+	\begin{center}
+		Submitted in partial fulfilment for the 
+		\linebreak Degree of Bachelor of Technology in 
+		\linebreak Electronic \& Telecommunication Engineering 
+	\end{center}
+	\vspace{2cm}
+	\begin{center}
+		Submitted by
+		\linebreak \textbf{Akash Suryavanshi }
+		\linebreak \textbf{Rutvik Shivalkar}
+		\linebreak \textbf{Aniket  Shinde}
+		\linebreak \textbf{Vaibhav Shingare}
+		\vspace{2cm}
+	\end{center}
+	
+	
+	
+	\newpage	
+	
+	\begin{center}
+		\LARGE{CERTIFICATE}
+	\end{center}
+	
+	
+	\vspace{2cm}
+	
+	This is to certify that Name of Student has completed the Akash Suryavanshi,Rutvik Shivalkar, Aniket  Shinde and Vaibhav Shingare has completed the project report on the topic "Smart Notification Display using OLED DigiSpex" satisfactorily in partial fulfillment for the Bachelor's Degree in Electronics \& Telecommunication Engineering under the guidance of Prof.Mr. Avishek Ray during the year 2021-2022 as prescribed by Mumbai University, Mumbai.
+	
+	\vspace{3cm}
+	
+	\begin{flushleft}
+		Guide \hspace{95.00mm} Head Of Department\newline
+		
+		
+		
+		Prof.Mr. Avishek Ray \hspace{80.00mm}   Dr.Baban
+	\end{flushleft}
+	
+	
+	
+	\vspace{2cm}
+	\begin{center}
+		Principal
+		
+		
+		
+		Dr. Vilas Nitnavare
+	\end{center}
+	
+	\vspace{2cm}
+	\begin{flushleft}
+		Examiner 1 \hspace{100.00mm} Examiner 2
+	\end{flushleft}
+	
+	
+	
+	
+	\newpage
+	
+	\begin{titlepage}
+		
+		\begin{center}
+			\title{Smart Notification Display using OLED DigiSpex}
+			\author {Prof. Mr.  Avishek Ray}
+			\date{\today} 
+		\end{center}
+	\end{titlepage}
+	
+	\tableofcontents
+	
+	
+	
+	\chapter{Introduction}
+	
+	\par In recent years, smart glasses have been released into the market.
+	Smart glasses are equipped with a see-through optical display, which is positioned in the eye-line of  users . The  user can view both the real-world environment and the virtual contents shown in the display, which is regarded as the concept of augmented reality.\\
+	\vspace{0.5cm}
+	\par The shift in mobile devices from smartphones to smart glasses will happen over the next decade. It is projected that smart glasses will become the next leading mobile device after the smartphone, according to market research conducted by Digi-captial . Thus, smart glasses have great potential in becoming the major platform for augmented reality
+	
+	
+	
+	
+	\newpage
+	\chapter{Literature Survey}
+	
+     	\par When used with wearable technology such as smart glasses, this blending of digital information with the physical world allow hand-free operation in such environment as healthcare,logistics,maintenance and construction, where the ability to devote both hands to te specific task is critical.\\
+		\vspace{0.5cm}
+        \par Imagine being able to pdate the knowledge you need diectly to an eyewear database. In other words, imagine a hand free workspace that has instant access to targeted knowledge directly in their field of view. Such an implementation would ultimately increase quality control,improve maintenance , provide faster and more reliable solutions , save money on managemeny and training , facilitate remote assistance
+	
+	
+	\newpage
+	
+	
+	
+	\chapter{METHODOLOGY}
+	
+	
+	$\bullet$ Smart- Glasses are the wearable computing device used as an extension, which can be attached to the spectacles or sunglasses of the wearer, and can be paired with Smart Phones, via Bluetooth. \\
+    $\bullet$ This extension, contains an Arduino Micro-controller having ATmega328p microprocessor, which is programmed to connect with Smart-Phones through a Smart-phone application.\\
+	$\bullet$ A Bluetooth module, named HC-05 is interfaced with ATmega328p, which is used to connect with smart-phones. \\
+	$\bullet$ A battery / Re-chargeable battery of 5V is used as power supply for SmartGlass.\\
+	$\bullet$ An SSD1306, 0.96” OLED display is interfaced with ATmega328p, which is used to display the data received from Smart-phones. Smart-Phone application is used to transmit data of the phone, i.e; Date, Time, Notifications of Phone call and Text messages.
+	
+	
+	
+	\chapter{PROBLEM DEFINATION}
+	$\bullet$ Facing a defining moment,smart glasses companies are fighting hard to maintain and expant their ground. Even through business are finding great workflow solution through eyeware technology , the general public will still have to wait a little longer to reap the benefits of mass-accessibility and usage. however , be not mistaken general public consumer sector is not being neglected .\\
+	$\bullet$ High performing smart glasses tend, currently to be bulky and stand at a price range that is still not convincing (nor fashionable) enough for social day to day usage.\\
+	$\bullet$ Fashionable pieces, on the other hand, have to sacrifice performance to get a sleeker look and still tend to keep a higher price range.\\
+	
+	\chapter{PROJECT OBJECTIVE}
+	\vspace{0.5cm}
+	\centering 
+	\begin{tabular}{|c|c|}
+		\hline Sr.No & Name of Food \\
+		\hline 1 & TIME\\
+		\hline 2 & DATE/DAY \\
+		\hline 3 & REMINDER \\
+		\hline 4 & WAVE COMMAND \\
+		\hline 5 &  DND MODE\\
+		\hline 6 & CALLING /MISSED CALL NOTIFICATIONS \\
+		\hline 7 &  TEMPERATURE\\
+		\hline
+	\end{tabular}
+
+     \subsubsection {Scope}
+
+      This Apllication is user friendly as it fulfills all the needs in todays world. Also the graphics are easy to understand and the Application is very easy to use. The future scope is good as the Apllication is very cheap and also flexible so it is easy to add or remove the features from this Apllication.
+	
+	\chapter{DATA FLOW DIAGRAM}
+	
+	\includegraphics[width=15cm, height=15cm]{C:/Users/User/Downloads/Rutvik/Flowchart}
+	
+	
+	\chapter{ACKNOWLEDGEMENTS}
+	We would like to express our sincere thanks and deep sense of  gratitude to K. C. College of Engineering \& Technology and Management  Studies \& Research for giving us an opportunity to integrate the learning  from this graduate course.\\
+	\vspace{0.5cm}
+	We take this opportunity to express our profound gratitude and  deep regards to our guide, Head of the Electronics and Telecommunication  Department, Dr. Baban U. Rindhe and Guide - AVISHEK RAY  for his exemplary guidance, monitoring and constant encouragement  throughout our project work titled “SMART NOTIFICATION DISPLAY USING OLED DIGISPECX” and also thanks to Department Faculty \& Technical staff members for their  time to time help for our project work.\\
+	\centering 
+	
+	\chapter{CONCLUSION}
+	$\bullet$ The technology is increasing rapidly so there are going to be advancement in wearable computers.\\ 
+	$\bullet$ Like Smart Watches the Smart Glasses are going to be the be more used accessories . \\
+	$\bullet$ The users will be able to receive Real time notifications of their phones directly onto their regular glasses.\\
+	
+
+	
+
+\end{document}
+	

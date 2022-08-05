@@ -1,0 +1,278 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack $VIA#0_POWER
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  )
+  (network_out
+   (Net 3.3V 
+   (rule
+   )
+   (wire (path BOT 127000  3520440 8991600 3302000 8991600 3302000 9588500
+     3787140 9588500)
+    (connect (terminal pin SPO2-3) (terminal wire))
+   )
+   (wire (path BOT 127000  3787140 10027920 3787140 9588500)
+    (connect (terminal smd U1-1) (terminal wire))
+   )
+   (wire (path BOT 127000  3787140 9398000 3787140 9588500)
+    (connect (terminal smd U1-2) (terminal wire))
+   )
+   )
+   (Net BAT 
+   (rule
+   )
+   (wire (path BOT 127000  4739640 10429240 4739640 9842500 5313680 9842500
+     5313680 4090157 5016500 4090157 5016500 3820160 4599940 3820160)
+    (connect (terminal pin BATTERY-0) (terminal pin "ARDUINO NANO"-3))
+   )
+   )
+   (Net BUZZER 
+   (rule
+   )
+   (wire (path BOT 127000  3837940 3694200 3492500 3694200 3492500 3058160
+     3075940 3058160)
+    (connect (terminal pin BUZ1-1) (terminal pin ARDUINO1-14))
+   )
+   )
+   (Net D10 
+   (rule
+   )
+   )
+   (Net D13 
+   (rule
+   )
+   )
+   (Net D2 
+   (rule
+   )
+   )
+   (Net D3 
+   (rule
+   )
+   )
+   (Net D4 
+   (rule
+   )
+   )
+   (Net D5 
+   (rule
+   )
+   )
+   (Net D6 
+   (rule
+   )
+   )
+   (Net D9 
+   (rule
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path BOT 127000  3837940 7493000 4826000 7493000 4826000 6360160
+     4599940 6360160)
+    (connect (terminal wire) (terminal pin "ARDUINO NANO"-13))
+   )
+   (wire (path BOT 127000  3837940 7261860 3837940 6858000 2857500 6858000
+     2857500 2476500 4010660 2476500 4010660 2849880)
+    (connect (terminal pin HC-05-2) (terminal pin SWITCH-1))
+   )
+   (wire (path BOT 127000  3246120 10431780 3873500 10431780 3873500 10223500
+     4191000 10223500)
+    (connect (terminal pin SUPPLY-1) (terminal wire))
+   )
+   (wire (path BOT 127000  4018280 9398000 4254500 9398000 4254500 10223500)
+    (connect (terminal smd U1-0) (terminal wire))
+   )
+   (wire (path BOT 127000  4254500 10223500 4191000 10223500)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 127000  3774440 8991600 3774440 9207500 4018280 9207500
+     4018280 9398000)
+    (connect (terminal pin SPO2-2) (terminal smd U1-0))
+   )
+   (wire (path BOT 127000  4485640 10429240 4485640 10223500 4254500 10223500)
+    (connect (terminal pin BATTERY-1) (terminal wire))
+   )
+   (wire (path BOT 127000  3774440 8991600 3769360 8991600 3769360 8338820)
+    (connect (terminal pin SPO2-2) (terminal pin LCD-2))
+   )
+   (wire (path BOT 127000  3837940 7261860 3837940 7493000)
+    (connect (terminal pin HC-05-2) (terminal wire))
+   )
+   (wire (path BOT 127000  3837940 7493000 3837940 7683500 3769360 7683500
+     3769360 8338820)
+    (connect (terminal wire) (terminal pin LCD-2))
+   )
+   )
+   (Net RX 
+   (rule
+   )
+   )
+   (Net RX-B 
+   (rule
+   )
+   (wire (path BOT 127000  4345940 7261860 4345940 4328160 4599940 4328160)
+    (connect (terminal pin HC-05-4) (terminal pin "ARDUINO NANO"-5))
+   )
+   )
+   (Net SCL 
+   (rule
+   )
+   (wire (path BOT 127000  4023360 8338820 4023360 7874000 4984750 7874000
+     4984750 5547201 4826000 5547201 4826000 5090160 4599940 5090160)
+    (connect (terminal pin LCD-1) (terminal pin "ARDUINO NANO"-8))
+   )
+   (wire (path BOT 127000  4023360 8338820 4028440 8338820 4028440 8991600)
+    (connect (terminal pin LCD-1) (terminal pin SPO2-1))
+   )
+   )
+   (Net SDA 
+   (rule
+   )
+   (wire (path BOT 127000  4277360 8338820 4889500 8338820 4889500 8064500
+     5143500 8064500 5143500 4836160 4599940 4836160)
+    (connect (terminal pin LCD-0) (terminal pin "ARDUINO NANO"-7))
+   )
+   (wire (path BOT 127000  4277360 8338820 4282440 8338820 4282440 8991600)
+    (connect (terminal pin LCD-0) (terminal pin SPO2-0))
+   )
+   )
+   (Net SWITCH 
+   (rule
+   )
+   (wire (path BOT 127000  2651760 3329940 2651760 2286000 4254500 2286000
+     4254500 3048000 4064000 3048000)
+    (connect (terminal pin R1-1) (terminal wire))
+   )
+   (wire (path BOT 127000  4064000 3048000 4064000 3937000 3302000 3937000
+     3302000 3312160 3075940 3312160)
+    (connect (terminal wire) (terminal pin ARDUINO1-13))
+   )
+   (wire (path BOT 127000  4064000 3048000 3756660 3048000 3756660 2849880)
+    (connect (terminal wire) (terminal pin SWITCH-0))
+   )
+   )
+   (Net TX 
+   (rule
+   )
+   )
+   (Net TX-B 
+   (rule
+   )
+   (wire (path BOT 127000  4599940 4074160 4254500 4074160 4254500 4127500
+     4127500 4127500 4127500 6340379 4091940 6340379 4091940 7261860)
+    (connect (terminal pin "ARDUINO NANO"-4) (terminal pin HC-05-3))
+   )
+   )
+   (Net VCC/VDD 
+   (rule
+   )
+   (wire (path BOT 127000  3553460 7493000 2651760 7493000 2651760 4345940)
+    (connect (terminal wire) (terminal pin R1-0))
+   )
+   (wire (path BOT 127000  3111500 9398000 3111500 8338820 3515360 8338820)
+    (connect (terminal wire) (terminal pin LCD-3))
+   )
+   (wire (path BOT 127000  3837940 5852160 3619500 5852160 3619500 7048500
+     3583940 7048500 3583940 7261860)
+    (connect (terminal wire) (terminal pin HC-05-1))
+   )
+   (wire (path BOT 127000  3111500 9398000 3111500 9588500 2992120 9588500
+     2992120 10431780)
+    (connect (terminal wire) (terminal pin SUPPLY-0))
+   )
+   (wire (path BOT 127000  3553460 7493000 3515360 7493000 3515360 8338820)
+    (connect (terminal wire) (terminal pin LCD-3))
+   )
+   (wire (path BOT 127000  3583940 7261860 3553460 7261860 3553460 7493000)
+    (connect (terminal pin HC-05-1) (terminal wire))
+   )
+   (wire (path BOT 127000  3837940 4394200 3837940 5852159)
+    (connect (terminal pin BUZ1-0) (terminal wire))
+   )
+   (wire (path BOT 127000  3837940 5852159 4599940 5852159 4599940 5852160)
+    (connect (terminal wire) (terminal pin "ARDUINO NANO"-11))
+   )
+   (wire (path BOT 127000  3837940 5852160 3837940 5852159)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 127000  3556000 9398000 3111500 9398000)
+    (connect (terminal smd U1-3) (terminal wire))
+   )
+   )
+  )
+ )
